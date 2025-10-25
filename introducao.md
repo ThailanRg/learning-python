@@ -24,7 +24,7 @@ O próprio programa “reconhece” qual tipo de dado está sendo utilizado, faz
 
 O Python é utilizado para desenvolvimento de software, análise de dados, inteligência artificial, automação de tarefas, criação de aplicativos web e daí por diante.
 
-[fonte](https://github.com/ThailanRg/learning-python.git)
+[fonte](https://www.alura.com.br/artigos/python)
 
 ## Linguagem interpretada
 O fato de ser uma linguagem interpretada, o que significa que ela não precisa passar pelo processo de compilação.
@@ -33,7 +33,7 @@ O processo de interpretação é executado dentro de máquinas virtuais, nas qua
 
 Isso acelera bastante a velocidade de desenvolvimento.
 
-[fonte](https://github.com/ThailanRg/learning-python.git)
+[fonte](https://www.alura.com.br/artigos/python)
 
 ## Multiparadigma
 Ela é um multiparadigma, pois nos dá a possibilidade de programar em vários paradigmas, tais como:
@@ -46,9 +46,93 @@ Ela é um multiparadigma, pois nos dá a possibilidade de programar em vários p
     - Que traz a perspectiva do mundo real para a programação, tornando os programas fáceis de entender devido a essa relação.
 
 ## Primeiros passos
+Instalar python
 
-Como instalar o Python no Windows;
-Como instalar o Python no Linux; e
-IDEs para desenvolvimento.
+1 - [Baixar o instalador](https://www.python.org/downloads/release/python-3139/)
 
+2 -  Marque a opção “Add Python to PATH”;
+Clique em “Install Now”;
 
+3 - Após a instalação, basta clicar no botão “Close”;
+Para verificar se a instalação do Python foi bem-sucedida, pesquise no Menu Iniciar por “cmd” e clique duas vezes para abri-lo;
+
+4 - Execute o comando para certificar que o python foi instalado, se tudo estiver certo o terminal ira imprimir a versao 
+
+instalada.
+```
+python --version
+```
+
+5 - execute o comando para validar se o gerenciador de pacotes do python tambem foi instalado
+
+```
+pip --version
+```
+
+<br>
+
+# Quais são os tipos de dados em Python?
+Python é uma linguagem dinamicamente tipada, o que significa que não é necessário declarar o tipo de variável ou fazer casting (mudar o tipo de variável), pois o Interpretador se encarrega disso para nós.
+
+Isso significa também que, se por algum motivo precisarmos alterar o tipo de variável durante a execução do programa, é possível fazer essa mudança.
+
+Os tipos de dados padrão do Python são:
+
+```
+Inteiro (int);
+Exemplo: 1
+
+01) Tipo Inteiro (int)
+É um tipo usado para um número que pode ser escrito sem um componente decimal, podendo ser positivo ou negativo.
+
+No código abaixo, por exemplo, vemos as variáveis, idade e ano, com os valores 20 e 2010 atribuídos a elas; se pedirmos que o programa imprima o tipo das variáveis, teremos como retorno que elas são do tipo inteiro:
+
+idade = 20
+ano = 2010
+print(type(idade))
+print(type(ano))
+<class ‘int’>
+<class ‘int’>
+```
+```
+Ponto Flutuante ou Decimal (float);
+Exemplo: 1.1
+
+02) Ponto Flutuante ou Decimal (float)
+É um tipo composto por números decimais. O float é usado para números racionais (que podem ser representados por uma fração), informalmente conhecidos como “números quebrados”.
+
+No código abaixo, por exemplo, vemos as variáveis altura e peso com os valores 1.73 e 78.500 atribuídos a elas.
+
+Se pedirmos que o programa imprima o tipo das variáveis, teremos como retorno que elas são do tipo float:
+
+altura = 1.73
+peso = 78.500
+print(type(peso))
+print(type(altura))
+<class ‘float’>
+<class ‘float’>
+```
+```
+Tipo Complexo (complex);
+Exemplo: 8j
+```
+```
+String (str);
+Exemplo: hello
+```
+```
+Boolean (bool);
+Exemplo: true / false
+```
+```
+List (list);
+Exemplo: ['Mônica', 'Ana', 'Bruno', 'Alice']
+```
+```
+Tuple;
+Exemplo: (90, 79, 54, 32, 21)
+```
+```
+Dictionary (dic);
+Exemplo: {'Camila': 1.65, 'Larissa': 1.60, 'Guilherme': 1.70}
+```
