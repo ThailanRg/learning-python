@@ -115,24 +115,317 @@ print(type(altura))
 ```
 Tipo Complexo (complex);
 Exemplo: 8j
+
+03) Complexo (complex)
+Tipo de dado usado para representar números complexos, normalmente em cálculos geométricos e científicos.
+
+Um tipo complexo contém duas partes: a parte real e a parte imaginária, sendo que a imaginária contém um j no sufixo.
+
+Com a função complex() podemos converter reais em números complexos. Ela traz dois argumentos, sendo o primeiro deles um número real, correspondente à parte real do número complexo, e o outro, um argumento opcional, que representa a parte imaginária. Por exemplo: z = complex(x,y).
+
+No exemplo abaixo, vemos as variáveis, a e b, com os valores 10+16j e 3+80j atribuídos a elas.
+
+Se pedirmos que o programa imprima o tipo das variáveis, vamos ter como retorno que elas são do tipo complex:
+
+a = 10+16j
+b = 3+80j
+print(type(a))
+print(type(b))
+<class ‘complex’>
+<class ‘complex’>
 ```
 ```
 String (str);
 Exemplo: hello
+
+04) String (str)
+É um conjunto de caracteres geralmente utilizados para representar palavras, frases ou textos.
+
+Temos como exemplo as variáveis nome e profissão, com os dados Guilherme e Engenheiro de Software atribuídos a elas.
+
+Pedindo para o programa imprimir o tipo dessas variáveis, teremos como retorno que elas são strings:
+
+nome = ‘Guilherme’
+profissao = ‘Engenheiro de Software’
+print(type(profissao ))
+print(type(nome))
+<class ‘str’>
+<class ‘str’>
 ```
 ```
 Boolean (bool);
 Exemplo: true / false
+
+05) Boolean (bool)
+Tipo de dado lógico que pode representar apenas dois valores: falso ou verdadeiro (False ou True, em Python).
+
+Na lógica computacional, podem ser considerados como 0 ou 1.
+Como exemplo, temos as variáveis: sexta_feira e feriado, com os dados True e False atribuídos a elas.
+
+Se pedirmos que o programa imprima o tipo das variáveis, vamos ter como retorno que elas são do tipo boolean:
+
+sexta_feira = True
+feriado = False
+print(type(sexta_feira))
+print(type(feriado))
+<class ‘bool’>
+<class ‘bool’>
 ```
+
 ```
 List (list);
 Exemplo: ['Mônica', 'Ana', 'Bruno', 'Alice']
+
+06) Listas (list)
+As listas agrupam um conjunto de elementos variados, podendo conter: inteiros, floats, strings, outras listas e outros tipos.
+
+Elas são definidas utilizando-se colchetes para delimitar a lista e vírgulas para separar os elementos. Já existe um artigo sobre listas em Python:
+[operações básicas na plataforma](https://www.alura.com.br/artigos/listas-no-python), caso você queira se aprofundar no tema.
+
+No código abaixo, por exemplo, vemos as variáveis alunos e notas, com os dados: ’Mônica’, ’Ana’, ’Bruno’, ’Alice’ e 10, 8.5, 7.8, 8.0 atribuídos a elas.
+
+Pedindo para o programa imprimir o tipo das variáveis, vamos ter como retorno que elas são do tipo lista:
+
+alunos = [‘Mônica’, ‘Ana’, ‘Bruno’, ‘Alice’]
+notas = [10, 8.5, 7.8, 8.0]
+print(type(alunos))
+print(type(notas))
+<class ‘list’>
+<class ‘list’>
 ```
 ```
 Tuple;
 Exemplo: (90, 79, 54, 32, 21)
+
+07) Tuplas (tuple)
+Assim como as listas, a tupla é um tipo que agrupa um conjunto de elementos.
+
+Porém, sua forma de definição é diferente, já que utilizamos parênteses e as informações são separadas por vírgula.
+
+Mas a *principal diferença das listas é que as tuplas são imutáveis, ou seja, após sua definição, não podem ser modificadas.
+
+Para saber mais a respeito desse tipo, confira o artigo [“Conhecendo as tuplas no Python”](https://www.alura.com.br/artigos/conhecendo-as-tuplas-no-python).
+
+No exemplo abaixo, há as variáveis valores e pontos, com conjuntos de dados atribuídos a elas.
+
+Pedindo para o programa imprimir o tipo das variáveis, temos como retorno que elas são do tipo tuple.
+
+valores = (80, 29, 45, 91, 23)
+pontos = (10, 29.05, 66.8, 72)
+print(type(valores)
+print(type(pontos))
+<class ‘tuple’>
+<class ‘tuple’>
+Se tentarmos modificar uma tupla, receberemos a seguinte mensagem de erro:
+
+IDE Jupyter Notebook exibindo o retorno”TypeError: ‘tuple’ object does not support item assignment
+
 ```
 ```
 Dictionary (dic);
 Exemplo: {'Camila': 1.65, 'Larissa': 1.60, 'Guilherme': 1.70}
+
+08) Dicionários (dict)
+Os dicionários são normalmente utilizados para agrupar elementos através da estrutura de chave e valor, de forma que a chave é o primeiro elemento, seguido por dois pontos e pelo valor.
+
+Vemos abaixo um exemplo de seu uso, por meio de variáveis de altura e idade, com dados de pessoas como primeiro elemento e os respectivos dados referentes às alturas e idades como valores.
+
+altura={‘Sandra’:1.65, ‘Elizabeth’: 1.60, ‘Roberto’: 1.70}
+idade = {‘Sandra’:35, ‘Elizabeth’:58, ‘Roberto’:68}”
+print(type(altura)
+print(type(idade))
+<class ‘dict’>
+ <class ‘dict’>
 ```
+
+## Conversao de tipos
+
+Float para String
+```
+# Antes de converter
+altura=1.55
+print(type(altura)
+
+# Fazendo a conversão
+altura = str(altura)”
+
+# Depois da conversão
+print(type(altura) 
+print(altura)
+
+<class ‘float’>
+<class ‘str’>
+```
+
+Inteiro para Float
+
+```
+# Antes de converter
+idade=18
+print(type(idade))
+
+# Fazendo a conversão
+idade = float(idade)
+
+# Depois da conversão
+print(type(idade) 
+print(idade)
+
+<class ‘intt’>
+<class ‘float’>
+```
+
+## Estruturas condicionais em Python: if, elif e else
+
+Estruturas condicionais são artifícios utilizados para controlar o fluxo de execução de programas, assim podemos determinar qual bloco de código será executado a partir de uma determinada condição.
+
+Na linguagem Python, podemos fazer isso utilizando as estruturas if, elif e else, como veremos a seguir.
+
+> ### If
+
+Utilizamos o if em um programa quando pretendemos verificar se uma ação é verdadeira e executar o bloco de código contido em seu escopo.
+
+Fazemos isso da seguinte forma:
+
+```
+media = 7
+if media > 6.9:
+print(“Você foi aprovado)”
+```
+
+Neste exemplo, nosso programa irá executar e retornar a mensagem: “Você foi aprovado”, apenas se a variável media possuir um valor maior que 6.9. Caso o valor seja menor do que isso, ele simplesmente irá ignorar o comando ''print'' e finalizará logo em seguida.
+
+
+> ### Else
+
+Se usarmos o if/else em conjunto, faremos com que uma das ações presentes no código sejam executadas, pois se determinada condição (if) for verdadeira, o programa executará uma ação.
+
+Caso não seja verdadeira, executaremos o else, ou seja, outra ação. Desse modo, testamos se uma condição é verdadeira.
+
+Neste exemplo abaixo, nosso programa irá executar e retornar a mensagem: “Você foi reprovado”, apenas se a variável media possuir um valor menor que 4.9. Caso contrário, será printado: “Você foi aprovado”.
+
+```
+media = 5
+
+if media < 4.9:
+print(“Você foi reprovado”)
+else:
+    print(“Você foi aprovado”)
+
+```
+
+> If, elif e else
+
+Utilizamos if/elif/else quando precisamos verificar mais de uma condição. Imagine que precisamos verificar se um aluno foi reprovado ou se ele ficou de recuperação.
+
+Teríamos algo parecido com o seguinte cenário:
+
+```
+media = 6
+if media < 5
+print(“Você foi reprovado”)
+elif media > 5 
+media < 7
+    print(“Você fará a recuperação”)
+else:
+    print(“Você foi aprovado”)
+```
+
+Primeiro, precisamos verificar se a média do aluno é menor que 5.
+
+Em caso positivo, vamos imprimir a mensagem: “Você foi reprovado”. Caso essa condição seja falsa, precisamos verificar se ele foi aprovado ou se fará a recuperação.
+
+
+Para isso, o elif irá testar se a média está entre os valores 5 e 7. Se sim, vamos imprimir a mensagem: “Você fará a recuperação”. Se a condição do if e do elif forem falsas, o código contido no else será executado e imprimirá a mensagem: “Você foi aprovado”.
+
+## Estrutura Match
+
+A partir do Python 3.10, podemos utilizar a estrutura match, que é uma maneira mais organizada e legível para lidar com múltiplas condições. Ela nos permite combinar padrões e executar o bloco de código correspondente ao primeiro padrão que for verdadeiro.
+
+```
+media = 6
+
+match media:
+    case media if media < 5:
+        print("Você foi reprovado")
+    case media if 5 <= media < 7:
+        print("Você fará a recuperação")
+    case media if media >= 7:
+        print("Você foi aprovado")
+
+```
+
+O trecho primeiro verifica a media e avalia cada caso para determinar qual bloco de código executar, da seguinte forma:
+
+- O primeiro case verifica se a média é menor que 5 e, se isso for verdadeiro, imprime "Você foi reprovado".
+
+- O segundo case verifica se a média está entre 5 e 7 (inclusive) e, se isso for verdadeiro, imprime "Você fará a recuperação".
+
+- O terceiro case verifica se a média é maior ou igual a 7 e, se isso for verdadeiro, imprime "Você foi aprovado".
+
+- Se nenhuma das condições for satisfeita, o match não executa nenhum bloco de código, mas podemos adicionar um case como padrão para lidar com casos que não prevemos.
+
+<br>
+
+Embora a estrutura match em Python não seja exatamente uma estrutura condicional no sentido tradicional como if, elif, e else, ela serve para controlar o fluxo do programa com base em diferentes condições e padrões
+
+Estruturas de repetição Python: for e while
+As estruturas de repetição são utilizadas quando queremos que um bloco de código seja executado várias vezes. Em Python podemos fazer isso de duas formas: utilizando for ou while.
+
+## Como usar For no Python?
+Utilizamos o for quando queremos iterar sobre um bloco de código por um determinado número de vezes.
+
+
+```
+for i in range(1,10):
+    print(i)
+
+Saída:
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+```
+
+## Como usar o While no Python?
+
+A outra forma de repetir a execução de um trecho de código até que uma condição seja satisfeita é utilizar o while.
+
+Ou seja, é necessário que uma expressão booleana dada seja verdadeira. A partir do momento que ela se tornar falsa, o while para.
+
+```
+gastos=0
+valor_gasto=0
+
+while gastos < 1000
+    valor_gasto = int(input(“Digite o valor gasto”))
+    gastos = gastos + valor_gasto
+print(gastos)
+
+Digite o valor do novo gasto 20
+Digite o valor do novo gasto 500
+Digite o valor do novo gasto 480
+1000
+
+```
+
+## Boas Práticas de programação em Python
+
+Com a constante evolução da tecnologia sempre surgem novas formas de escrever um código.
+
+Por isso, aplicar boas práticas de programação é fundamental para aprimorar o ambiente de trabalho, ter qualidade no momento de programar, manter o código legível, organizado e funcional.
+
+[Como desenvolver boas práticas de programação? com Fabio Akita | #HipstersPontoTube](https://www.youtube.com/watch?v=GUanHEGlje4)
+
+[fonte](https://www.alura.com.br/artigos/python)
+
+
+
+
