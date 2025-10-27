@@ -1,5 +1,7 @@
 # Python
 
+https://cursos.alura.com.br/formacao-data-science-python
+
 ## Origem
 
 O desenvolvimento do Python aconteceu, inicialmente, pelo programador holandês Guido van Rossun, no final da década de 1980.
